@@ -1,19 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <title>JSP Image Gallery</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
 
-<h2>Checkboxes</h2>
-<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">My JSP Image Gallery</h1>
 
-<form action="/action_page.php">
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2"> I have a car</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3"> I have a boat</label><br><br>
-  <input type="submit" value="Submit">
-</form> 
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://picsum.photos/400/250?random=1" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Image One</h5>
+                    <p class="card-text">Random placeholder image from Picsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://picsum.photos/400/250?random=2" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Image Two</h5>
+                    <p class="card-text">Clean and modern layout using Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <img src="https://picsum.photos/400/250?random=3" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Image Three</h5>
+                    <p class="card-text">Perfect for testing Tomcat deployments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
