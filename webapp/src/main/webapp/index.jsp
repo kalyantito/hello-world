@@ -7,7 +7,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); 
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -44,6 +44,17 @@
             border-radius: 6px;
         }
 
+        .addons {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .addons label {
+            font-weight: normal;
+            display: block;
+            margin-bottom: 6px;
+        }
+
         button {
             width: 100%;
             padding: 12px;
@@ -74,6 +85,15 @@
 
             <label>Email</label>
             <input type="email" placeholder="Enter your email" required>
+
+            <div class="addons">
+                <label><strong>Travel Add‑Ons</strong></label>
+
+                <label><input type="checkbox"> Camping</label>
+                <label><input type="checkbox"> Tent</label>
+                <label><input type="checkbox"> BBQ</label>
+                <label><input type="checkbox"> Campfire</label>
+            </div>
 
             <button type="submit">Register</button>
         </form>
