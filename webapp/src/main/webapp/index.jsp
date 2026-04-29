@@ -7,10 +7,13 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+
+            /* Beach + Tent + Campfire + BBQ background */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?camping-tent-bbq-campfire');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+
             height: 100vh;
             display: flex;
             justify-content: center;
