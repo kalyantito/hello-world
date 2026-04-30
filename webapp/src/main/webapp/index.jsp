@@ -8,8 +8,8 @@
             padding: 0;
             font-family: Arial, sans-serif;
 
-            /* Beach + Tent + Campfire + BBQ background */
-            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?camping-tent-bbq-campfire');
+            /* Enhanced beach + camping background */
+            background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -21,56 +21,72 @@
         }
 
         .form-container {
-            background: rgba(255, 255, 255, 0.85);
-            padding: 25px;
-            width: 350px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            background: rgba(255, 255, 255, 0.75);
+            padding: 30px;
+            width: 380px;
+            border-radius: 15px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.4);
         }
 
         h2 {
             text-align: center;
             margin-bottom: 20px;
-            color: #006994;
+            color: #004d66;
+            font-size: 26px;
         }
 
         label {
             font-weight: bold;
-            color: #333;
+            color: #222;
         }
 
         input[type="text"], input[type="email"], input[type="tel"] {
             width: 100%;
-            padding: 10px;
-            margin: 8px 0 15px 0;
-            border: 1px solid #aaa;
-            border-radius: 6px;
+            padding: 12px;
+            margin: 8px 0 18px 0;
+            border: 1px solid #888;
+            border-radius: 8px;
+            font-size: 15px;
         }
 
         .addons {
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 10px;
         }
 
         .addons label {
             font-weight: normal;
-            display: block;
-            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        .addons img {
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
         }
 
         button {
             width: 100%;
-            padding: 12px;
-            background-color: #0099cc;
+            padding: 14px;
+            background-color: #0088cc;
             border: none;
             color: white;
-            font-size: 16px;
-            border-radius: 6px;
+            font-size: 17px;
+            border-radius: 8px;
             cursor: pointer;
+            font-weight: bold;
         }
 
         button:hover {
-            background-color: #0077aa;
+            background-color: #006fa3;
         }
     </style>
 </head>
@@ -92,10 +108,25 @@
             <div class="addons">
                 <label><strong>Travel Add‑Ons</strong></label>
 
-                <label><input type="checkbox"> Camping</label>
-                <label><input type="checkbox"> Tent</label>
-                <label><input type="checkbox"> BBQ</label>
-                <label><input type="checkbox"> Campfire</label>
+                <label>
+                    <img src="https://img.icons8.com/color/48/camping-tent.png">
+                    <input type="checkbox"> Camping
+                </label>
+
+                <label>
+                    <img src="https://img.icons8.com/color/48/tent.png">
+                    <input type="checkbox"> Tent
+                </label>
+
+                <label>
+                    <img src="https://img.icons8.com/color/48/barbecue.png">
+                    <input type="checkbox"> BBQ
+                </label>
+
+                <label>
+                    <img src="https://img.icons8.com/color/48/campfire.png">
+                    <input type="checkbox"> Campfire
+                </label>
             </div>
 
             <button type="submit">Register</button>
